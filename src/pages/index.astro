@@ -2,6 +2,7 @@
 import EditorBase from "../components/EditorBase.astro";
 import OutputBase from "../components/OutputBase.astro";
 import Base from "../layouts/Base.astro";
+import CopyCode from "../components/CopyCode.astro";
 ---
 
 <Base pageTitle="Home">
@@ -18,20 +19,14 @@ import Base from "../layouts/Base.astro";
 
             <ol class="m-0 p-0">
               <li>
-                Install Hapy from the temporary location. We'll publish Hapy to
-                a permanaent location soon. Enter this command in your terminal:
+                Install using pip
 
-                <div class="alert alert-info p-2 text-weight-bold">
-                  pip install -i https://test.pypi.org/simple/ --extra-index-url
-                  https://pypi.org/simple/ Hapy
-                </div>
+                <CopyCode code="pip install hapy"/>
               </li>
 
               <li>
                 Then check if the installation was successful
-                <div class="alert alert-info p-2 text-weight-bold">
-                  hapy --version
-                </div>
+                <CopyCode code="hapy --version"/>
               </li>
 
               <li>
