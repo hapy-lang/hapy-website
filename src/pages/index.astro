@@ -14,31 +14,33 @@ import CopyCode from "../components/CopyCode.astro";
             <h1 class="display-5 fw-bolder text-white mb-2">
               <img src="/images/logo-transparent-bg.png" height="60px" />
               Hapy
+              <span class="lead fw-normal text-white mb-4">Write code in Hausa</span>
             </h1>
-            <p class="lead fw-normal text-white-50 mb-4">Write code in Hausa</p>
+           
 
-            <ol class="m-0 p-0">
-              <li>
-                Install using pip
+            <div class="m-0 p-0">
+              <div class="card shadow-lg my-5 card bg-dark p-4">
+                <p class="text-white">
+                  Hapy is installed using Pip which comes with 
+                  <a href="https://www.python.org/downloads/">Python</a>
+                </p>
 
                 <CopyCode code="pip install hapy"/>
-              </li>
+              </div>
 
-              <li>
+              <!-- <li>
                 Then check if the installation was successful
                 <CopyCode code="hapy --version"/>
-              </li>
+              </li> -->
 
-              <li>
-                Congratulations! Hapy is now installed on your system. Check out
-                example codes <a href="/examples">here</a>
-              </li>
-
-              <p class="text-muted">
-                Make sure you have Python
-                <a href="https://www.python.org/downloads/">installed</a> o
+              <p class="mt-5">
+                Congratulations! Hapy is now installed on your system.
+                We're working on writing documentation for the language. But in the meantime you can play around with in in the editor
+                and see examples on our <a href="https://github.com/hapy-lang/hapy" target="_blank">github</a> page.
               </p>
-            </ol>
+
+              
+            </div>
           </div>
         </div>
         <div class="col-md-7 d-xl-block ps-3">
