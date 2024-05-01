@@ -4,7 +4,7 @@ import { monarchSettings } from './monarch-settings';
 // elements
 var outputContainer = document.getElementById("output");
 var pythonCodeContainer = document.getElementById("python_code");
-var hapyApiBaseUrl = 'https://hapy-api-production.up.railway.app';
+var hapyApiBaseUrl = 'https://hapy-api.onrender.com';
 
 var runEndpoint = hapyApiBaseUrl + '/api/run';
 
